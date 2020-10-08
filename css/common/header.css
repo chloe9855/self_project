@@ -1,0 +1,69 @@
+header{
+  width:100%;
+  /*border:1px solid blue;*/
+  font-size:0;
+  margin:0 auto;
+  position:sticky;
+  top:0;
+  min-width:1200px;
+  z-index:10000;
+}
+
+
+header div.bar{
+  /*border:1px solid black;*/
+  padding:10px;
+  background-color: rgb(255, 255, 255,.55);
+}
+
+header div.bar::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+a.logo_img img{
+  display:inline-block;
+  width:170px;
+  vertical-align:middle;
+  margin-left:25px;
+  /*border:1px solid red;*/
+}
+
+header nav.nav ul.link_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav.nav{
+  display: inline-block;
+  vertical-align: middle;
+  float:right;
+ /* border:1px solid green;*/
+}
+
+header nav.nav ul.link_list > li{
+  display:inline-block;
+}
+
+
+header nav.nav ul.link_list > li > a{
+  font-family: "mySemiBold";
+  font-size:15px;
+  display:inline-block;
+  text-decoration: none;
+  padding: 14px 10px;
+  min-width: 100px;
+  text-align: center;
+  color: #3C3C3C;
+}
+
+a.cart img{
+  margin-left:20px;
+  width:20px;
+  vertical-align:middle;
+}
+
+
