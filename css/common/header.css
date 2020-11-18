@@ -135,7 +135,7 @@ nav.right{
   height:100vh;
   width:100%;
   background-color:white;
-  /*padding:10px;*/
+  font-family:'Noto Serif TC', serif;
 }
 
 nav.right > ul > li {
