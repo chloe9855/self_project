@@ -1,14 +1,13 @@
 @import "./common/reset.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 @font-face{
   font-family: "myGeorgia";
   src: url("../fonts/georgia.ttf");
   font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 
 img{
   max-width:100%;
