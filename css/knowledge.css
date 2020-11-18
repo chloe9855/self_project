@@ -1,0 +1,228 @@
+@import "./common/reset.css";
+@import "./common/footer.css";
+@import "./common/header.css";
+
+
+@font-face{
+  font-family: "myGeorgia";
+  src: url("../fonts/georgia.ttf");
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+
+*{
+  box-sizing:border-box;
+  list-style:none;
+}
+
+
+html , body{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-size:0;
+  font-family: "Noto Sans TC Light";
+  color:#494949;
+  
+}
+
+nav.right > ul > li:nth-child(4) a{
+  background-color:#ffba39;
+  color:white;
+}
+
+header nav.nav ul.link_list > li:nth-child(4) a{
+  color:#ffba39;
+}
+
+
+
+div.banner{
+  min-width: 100%;
+  height: 35vw;
+  background-image: url("../img/know.jpg");
+  background-size: cover;
+  background-position:center  center;
+  text-align:center;
+}
+
+div.banner > p.banner_title{
+  color:black;
+  text-shadow:7px 4px 12px white;
+  font-size:45px;
+  font-family: "Noto Serif CJK TC SemiBold";
+  display:inline-block;
+  margin:0 auto;
+  margin-top:12%;
+}
+
+div.parent_container{
+  max-width:1200px;
+  margin:50px auto 90px;
+/*  font-size:16px;*/
+  text-align:center;
+}
+
+
+p.title{
+  font-size:23px;
+  margin-bottom:5px;
+  
+}
+
+p.title2{
+  font-size:16px;
+  margin-bottom:5px;
+}
+
+
+div.all{
+  margin:15px auto 30px;
+  display:inline-block;
+}
+
+
+
+
+div.card{
+  cursor:pointer;
+  width:310px;
+  height:413px;
+  transition:all 0.8s;
+  box-shadow:-3px 3px 10px #eee;
+  background-color:white;
+  display:inline-block;
+  margin:0px 7px 20px 7px;
+}
+
+
+div.card a.a1 {
+  display:inline-block;
+ /* border:1px solid black;*/
+}
+
+
+div.card a.a1 img{
+  display:block;
+  width:310px;
+  height:207px;
+}
+
+
+
+
+div.bg{
+  background-color:#FFFFDF;
+  position:relative;
+  height:50.67px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.bg.cc{
+  background-color:#FFEEDD;
+}
+
+div.bg.cc2{
+  background-color:#FFD2D2;
+}
+
+
+
+div.info div.date{
+  display:inline-block;
+  font-size:20px;
+  padding:2px 23px;
+   font-family: "myGeorgia";
+   font-weight:bold;
+   background-color:#FFE153;
+   color:white;
+   position:absolute;
+   left:0px;
+}
+
+
+div.info div.date.cc{
+  background-color:#FFC78E;
+}
+
+div.info div.date.cc2{
+  background-color:#FF9797;
+}
+
+
+
+
+div.info p.p1{
+  font-size:18px;
+  display:inline-block;
+  vertical-align:top;
+  margin-top:10px;
+  margin-left:70px;
+}
+
+
+div.txt{
+  padding:15px;
+}
+
+div.txt p.txt1{
+  font-size:15px;
+  display:inline-block;
+  text-align:left;
+  display: -webkit-box;         /* -webkit-box 尚在實驗性的屬性值 */
+  -webkit-box-orient: vertical; /* 用來設定一個元素是水平還是垂直方向排列其內容 */
+  -webkit-line-clamp: 4;        /* 限制指定的行數 */
+  overflow: hidden;
+}
+
+
+div.txt p.txt2{
+  font-size:12px;
+  text-align:right;
+  margin-top:20px;
+}
+
+
+
+
+div.card:hover{
+  position: relative;
+  z-index:2;
+  transform:scale(1.1,1.1);
+  box-shadow:2.5px 2.5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+div.pagination_block{
+  font-size:15px;
+  margin:30px 0 60px 0;
+}
+
+div.pagination_block > ul.pagination > li{
+  display:inline-block;
+  margin:0 10px;
+}
+
+div.pagination_block > ul.pagination > li > a{
+  /*border:1px solid red;*/
+  padding:5px;
+  color:gray;
+}
+
+
+div.pagination_block > ul.pagination > li > a.-on{
+  color:rgb(230, 133, 0);
+}
+
+div.pagination_block > ul.pagination > li > a:hover{
+  color:rgb(230, 133, 0);
+}
+

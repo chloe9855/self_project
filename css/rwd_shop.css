@@ -1,0 +1,171 @@
+
+
+
+@media screen and (min-width: 768px){
+	div.allitem {
+		width:28%;
+	}
+
+	div.allitem > a > img{
+		/*width: 100%;*/
+		/*width: 20.16vw;
+		height: 20.16vw;*/
+		width: 100%;
+		height: 100%;
+	}
+
+	aside > div.search_bar > input.search{
+	  
+	}
+
+	button.btn_filter2 , div.filter{
+		display:none;
+	}
+
+	aside{
+		display:block !important;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+
+	div.banner > p.banner_title{
+		font-size:30px;
+	}
+
+
+	div.parent_container{
+		width:540px;
+		flex-direction: column;
+	}
+
+
+	div.banner{
+    max-width:100%;
+    }
+
+
+	main{
+		display:block;
+		max-width: 100%;
+		margin-top:15px;
+	}
+
+	div.allitem {
+		width: 45%;
+	}
+
+
+	aside{
+		width:95%;
+		margin-bottom:40px;
+		position:relative;
+		display:none;
+		margin:0 auto 30px;
+		background-color:rgb(255, 252, 213, 0.42);
+		padding:15px 0;
+	}
+
+	aside  div.option_list > div.option{
+		display:inline-block;
+		padding-right:10px;
+	}
+
+	aside  div.option_list > div.option label input{
+		display:inline-block;
+	}
+
+	aside  div.search_bar{
+		display:inline-block;
+	}
+
+	button.btn_filter2{
+		position:absolute;
+		right:0;
+		top:0;
+		outline:none;
+		border:none;
+		background-color:transparent;
+		font-size:19px;
+		font-weight:bold;
+		color:#989898;
+		padding:5px;
+	}
+
+
+	div.filter{
+		width:95%;
+		margin:0 auto 10px;
+		padding:15px 0;
+	}
+
+	button.btn_filter{
+		outline:none;
+		border:none;
+		background-color:transparent;
+	}
+
+	img.fill{
+		width:33px;
+	}
+
+
+	
+	
+}
+
+@media screen and (max-width: 575px){
+	div.parent_container{
+		width:100%;
+	}
+	div.allitem > a > img {
+	    width: 45vw;
+	    height: 45vw;
+	}
+
+	div.pagination_block{
+		padding:0 20px;
+	}
+}
+
+
+
+
+@media screen  and (min-width:935px){
+	button.hamburger{
+    display: none ;
+	}
+    nav.right{
+  	display:none !important;
+  	}
+
+}
+
+
+
+@media screen  and (max-width:934px){
+	
+
+	nav.nav{
+    display: none !important;
+  }
+
+
+  button.hamburger{
+    display: inline-block !important;
+  }
+
+}
+
+/*@media screen and (min-width: 1281px){
+	div.allitem > a > img{
+		width: 16.16vw;
+		height: 16.16vw;
+	
+	}
+}*/
+
+
+
+

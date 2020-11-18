@@ -1,17 +1,9 @@
 @import "./common/reset.css";
 @import "./common/footer.css";
 @import "./common/header.css";
-@font-face{
-  font-family: "myFontLight";
-  src: url("../fonts/NotoSansTC-Light.otf");
-  font-display: swap;
-}
 
-@font-face{
-  font-family: "mySemiBold";
-  src: url("../fonts/NotoSerifCJKtc-SemiBold.otf");
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 
 *{
   box-sizing:border-box;
@@ -19,18 +11,33 @@
 }
 
 
+html , body{
+  scroll-behavior:smooth;
+}
+
 body{
   margin:0;
   font-size:0;
-  font-family: "myFontLight";
+  font-family: 'Noto Sans TC', sans-serif;
   color:#494949;
+  
+}
+
+nav.right > ul > li:nth-child(2) a{
+  background-color:#ffba39;
+  color:white;
+}
+
+header nav.nav ul.link_list > li:nth-child(2) a{
+  color:#ffba39;
 }
 
 
 
 div.banner{
-  min-width: 1200px;
-  height: 450px;
+  min-width: 100%;
+  height:35vw;
+  /*min-height:450px;*/
   background-image: url("../img/banner_workshop.jpg");
   background-size: cover;
   background-position:top  center;
@@ -41,25 +48,42 @@ div.banner > p.banner_title{
   color:black;
   text-shadow:10px 10px 12px white;
   font-size:45px;
-  font-family: "mySemiBold";
+  font-family: 'Noto Serif TC', serif;
   display:inline-block;
   margin:0 auto;
-  margin-top:120px;
+  margin-top:12%;
 }
 
+
+/**/
+
+
+div.course_man > p:before{
+  content:"";
+  display:block;
+  height:70px;
+}
+
+
+/**/
+
+
+
+
+
+
 div.parent_container{
-  width:1200px;
+  max-width:1200px;
   margin:50px auto 30px;
-  border:1px solid black;
   font-size:16px;
   text-align:center;
 }
 
 div.course_type{
-  border:1px solid red;
+  /*border:1px solid red;*/
   display:inline-block;
   margin:0 auto;
-  margin-bottom:120px;
+  margin-bottom:10px;
 }
 
 div.course_type > div.button_man{
@@ -72,22 +96,29 @@ div.course_type >  div.button_company{
 
 
 div.course_type > div.button_man > a {
-  border:1px solid green;
   display:block;
   font-size:20px;
   padding:30px;
-  margin-right:20px;
-  border-radius:10px;
+  /*width:200px;*/
 }
 
 div.course_type >  div.button_company > a {
-  border:1px solid green;
+  border-left:0.3px solid gray;
   display:block;
   font-size:20px;
   padding:30px;
-  margin-left:20px;
-  border-radius:10px;
 }
+
+
+div.button_man > a:hover{
+  color:#ffba39;
+}
+
+ div.button_company > a:hover{
+  color:#ffba39;
+}
+
+
 
 
 div.course_type >  div.button_company > a > span{
@@ -99,66 +130,88 @@ div.course_type >  div.button_man > a > span{
 }
 
 
-div.course_man{
-  border:1px solid red;
-}
 
 div.course_man > p{
     font-size:25px;
-    border:1px solid blue;
-
 }
 
-/*div.course_man > p > span{
-  font-size:20px;
-}*/
 
 
 
 
 div.piccontainer{
-  border:1px solid black;
-  margin-bottom:90px;
+  /*border:1px solid black;*/
+
+}
+
+div.allin{
+  /*border:1px solid blue;*/
+  display: inline-block;
+  padding:15px;
 }
 
 
 
-div.piccontainer > a.card{
+
+
+
+a.card{
   position:relative;
   display: inline-block;
   font-size: 0px;
-  border-radius: 5px;
   overflow: hidden;
-  border-radius: 10px;
-  border:1px solid black;
-  width:350px;
+  /*width:530px;*/
+  width:100%;
   height:230px;
-  background-image:url("../img/filter.jpg");
+  background-image:url("../img/w1.jpg");
   background-position:center center;
   background-size:cover;
-  margin:0 20px;
+  /*margin:0 20px;*/
 }
 
-div.piccontainer > a.card.bg2{
-   background-image:url("../img/filter2.jpg");
+div.piccontainer  a.card.bg2{
+   background-image:url("../img/w2.jpg");
+}
+
+div.piccontainer  a.card.bg3{
+   background-image:url("../img/w3.jpg");
+}
+
+div.piccontainer  a.card.bg4{
+   background-image:url("../img/w4.jpg");
+}
+
+div.piccontainer  a.card.bg5{
+   background-image:url("../img/w5.jpg");
+}
+
+
+div.piccontainer  a.card.bg6{
+   background-image:url("../img/w6.jpg");
+}
+
+div.piccontainer  a.card.bg7{
+   background-image:url("../img/w7.jpg");
+}
+
+div.piccontainer  a.card.bg8{
+   background-image:url("../img/w8.jpg");
 }
 
 
  a span.hint_text{
-  color: white;
-  /*border: 1px solid red; */
+  color: black;
   position: absolute;
   top:30%;
-  left:0px;
-  
-  width:100%;
+  left:70px; 
+  /*width:100%;*/
   padding: 10px;
-  text-align: center;
-  font-size: 20px;
-  /*font-weight:bold;*/
-  text-shadow:black 10px 10px 12px;
-   transform:translateY(0%);
-   transition:1s;
+  text-align: left;
+  font-size: 23px;
+ /* font-weight:bold;*/
+  text-shadow:white 10px 10px 12px;
+  transform:translateY(0%);
+  transition:1s;
 }
 
 
@@ -171,28 +224,53 @@ a:hover span.hint_text {
 
 
 div.course_man span.man_info{
-  border:1px solid red;
   margin-bottom:60px;
   margin-top:20px;
   display:inline-block;
+  padding: 0px 13px;
 }
+
 
 
 div.txt{
-  border:1px solid black;
-  font-size:16px;
-}
-
-div.txt
-
-
-div.piccontainer p.tt{
-  width:350px;
-  display:inline;
-  border:1px solid red;
+  margin-bottom:80px;
 }
 
 
+div.txt1{
+  max-width:530px;
+  position:relative;
+  padding-left:10px;
+  border-bottom:1px solid rgb(208, 207, 205);
+}
 
 
+div.txt1 p.s1{
+  font-size:17px;
+  text-align:left;
+  margin-bottom:2px;
+  color:#ffba39;
+}
 
+div.txt1 p.s2{
+  text-align:left;
+  padding-top:5px;
+  display: -webkit-box;         /* -webkit-box 尚在實驗性的屬性值 */
+  -webkit-box-orient: vertical; /* 用來設定一個元素是水平還是垂直方向排列其內容 */
+  -webkit-line-clamp: 3;        /* 限制指定的行數 */
+  overflow: hidden;
+}
+
+
+div.txt1 a.s3{
+  display:inline-block;
+  /*text-align:right ;*/
+  position:absolute;
+  padding:5px 7px 5px 5px;
+  right:0;
+  bottom:0;
+}
+
+a.s3:hover{
+  color:#ffba39;
+}

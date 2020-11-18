@@ -2,30 +2,38 @@ footer{
   background-color: rgb(233, 223, 207);
   font-size:16px;
   color: black;
-  text-align: left;
-  padding: 30px 0;
-  padding-left:70px;
-  min-width: 1200px;
+  text-align: center;
+  padding: 30px 0 10px 0;
+  /*min-width: 1200px;*/
   box-sizing: border-box;
+  margin-top:80px;
+  /*width:100%;*/
+  min-width:100%;
 }
 
-footer > div.footer_info{
-  display:inline-block;
-}
 
-footer > div.footer_info > p.f1{
-  font-size:19px;
-  font-weight:bold;
-  margin-bottom:10px;
+p.f4{
+  color: gray;
+  margin:0 auto;
+  font-size:13px;
 }
 
 div.social{
-  /*border:1px solid red;*/
-  display:inline-block;
-  vertical-align:top;
-  margin-left:500px;
+  margin:0 auto;
+  margin-bottom:20px;
 }
 
-img.twitter{
+
+div.social a{
+  display:inline-block;
   margin:0 10px;
+}
+
+div.social .fab{
+  font-size:40px;
+}
+
+div.social .fab:hover{
+  color: #ffba39;
+  transition: all .3s ease-in-out;
 }

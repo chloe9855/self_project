@@ -2,117 +2,249 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">	
+	<title>多肉工坊</title>
 	<link rel="stylesheet" href="./css/workshop.css">
+	<link rel="stylesheet" href="./vendors/dist/hamburger.css">
+	<link rel="stylesheet" href="./css/rwd_workshop.css">
+	<link rel="stylesheet" href="./awesome/css/all.css">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	
 	<header>
+		<!-- 側邊購物車 -->
+	    <div class="car">
+	      <button class="closebtn">╳</button>
+	      <div class="ctitle">您的購物車</div>
+
+	          <div class="cart-items">
+	          </div>
+
+	            <div class="cart-total">
+	                <strong class="cart-total-title">Total</strong>
+	                <span class="cart-total-price">$0</span>
+	            </div>
+	            
+	            <button class="btn btn-primary btn-purchase" type="button">前往結帳</button>
+	    </div>
+
 	  <div class="bar">
 		  <a href="./index.html" class="logo_img"><img src="./img/logo3.png"></a>
+
+		  <button class="hamburger hamburger--spring" type="button">
+	        <span class="hamburger-box">
+	         	<span class="hamburger-inner"></span>
+	        </span>
+	      </button>
+
+
 	      <nav class="nav">
 	        <ul class="link_list">
 	          <li>
-	            <a href="shop.html" class="shop" target="_blank">線上商店</a>
+	            <a href="shop.html" class="plu">線上商店</a>
 	          </li>
 	          <li>
-	            <a href="workshop.html" target="_blank">手作課程</a>
+	            <a href="workshop.html" class="plu">手作課程</a>
 	          </li>
 	          <li>
-	            <a href="spacedeco.html" target="_blank">空間造景</a>
+	            <a href="spacedeco.html" class="plu">空間造景</a>
 	          </li>
 	          <li>
-	            <a href="knowledge.html" target="_blank">多肉知識</a>
+	            <a href="knowledge.html" class="plu">多肉專欄</a>
 	          </li>
 	          <li>
-	            <a href="aboutus.html" target="_blank">關於我們</a>
-	          </li>
-	          <li>
-	            <a href="#" class="cart"><img src="./img/cart.png"></a>
+	            <a href="aboutus.html" class="plu">關於我們</a>
 	          </li>
 	        </ul>
 	      </nav>
+
+	      <div class="allbt">
+		      <button class="hc itsu"><i class="fas fa-shopping-cart"></i></button>
+		      <button class="hc"><i class="fas fa-user"></i></button>
+	  	  </div>
 	    
 	  </div>
+
+
+
+	  <nav class="right">
+         <ul class="list">
+          <li>
+            <a href="shop.html" class="">線上商店</a>
+          </li>
+          <li>
+            <a href="workshop.html" class="">手作課程</a>
+          </li>
+          <li>
+            <a href="spacedeco.html" class="">空間造景</a>
+          </li>
+          <li>
+            <a href="knowledge.html" class="">多肉專欄</a>
+          </li>
+          <li>
+            <a href="aboutus.html" class="">關於我們</a>
+          </li>
+          <!-- <li>
+            <a href="#" class="cart"><img src="./img/cart.png"></a>
+          </li> -->
+        </ul>
+      </nav>
+
   	</header>
 
   	<div class="banner"><p class="banner_title">手作課程</p></div>
 
   	<div class="parent_container">
   		<div class="course_type">
-  			<div class="button_man"><a href="#">
+  			<div class="button_man"><a href="#mannn">
   				個人手作課程<br><span>Personal workshop</span>
   			</a></div>
 
-  			<div class="button_company"><a href="#">
+  			<div class="button_company"><a href="#corppp">
   				企業手作課程<br><span>Corporate workshop</span>
   		    </a></div>  			
   		</div>
 
   		<div class="course_man">
-  			<p>個人手作課程<br><span>Personal workshop</span></p>
+  			<p id="mannn">個人手作課程<br><span>Personal workshop</span></p>
   			<span class="man_info">邀請你拋開日常的繁忙與緊湊，帶你走入植栽、園藝的療癒空間。</span>
 
   		<div class="piccontainer">
 
-			<a class="card" href="#" target="_blank" >
-			  <span class="hint_text">捏陶多肉組盆<br>Pottery&Succulents
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  近期開課 ｜ 2020/12/15
-				  <br>
-				  $1200
-			 </span>
-			</a>
-			<div class="tt">哈哈</div>
+  			<div class="allin">
+				<a class="card" href="#">
+				  <span class="hint_text">綠夏仙人掌花環<br>Cactus Wreath
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  開課日期 ｜ 2020/10/30
+					  <br>
+					  $1500
+				 </span>
+				</a>
+
+				<div class="txt1">
+				<p class="s1">[ 多肉花藝 ] 綠夏仙人掌花環</p>
+					<p class="s2">拋開泥土的束縛與盆器的框架，將仙人掌種在藤圈上，合為一體成為最特別的作品，
+					不拘束仙人掌們的生長姿態，以最自然的方式展現他們的美麗。
+					</p>
+					<br>
+					<br>
+					<a class="s3" href="#"> more ›</a>
+				</div>		
+
+			</div>
+			
+
+			
+
+		
+			
+			<div class="allin">
+				<a class="card bg2" href="#">
+				  <span class="hint_text">捏陶多肉組盆<br>Pottery&Succulents
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  開課日期 ｜ 2020/12/15
+					  <br>
+					  $1200
+				 </span>
+				</a>
+			
+
+				<div class="txt1">
+					<p class="s1">[ 陶藝課程 ] 手捏陶器 & 多肉組盆</p>
+						<p class="s2">從盆器設計、釉色挑選、多肉種植，每一個步驟都可以參與製作，若你期待擁有一個獨一無二的陶盆，手捏陶盆課程邀請你共同來完成自己的作品！
+						</p>
+						<br>
+						<br>
+						<a class="s3" href="#"> more ›</a>
+				</div>	
+		    </div>
 
 
-			<a class="card bg2" href="#" target="_blank" >
-			  <span class="hint_text">綠夏仙人掌花環<br>Cactus Wreath
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  近期開課 ｜ 2020/10/30
-				  <br>
-				  $1200
-			 </span>
-			</a>
+  		
+ 		    <div class="allin">
+				<a class="card bg3" href="#">
+				  <span class="hint_text">多肉糖霜餅乾<br>Succulents Cookies
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  開課日期 ｜ 2020/10/30
+					  <br>
+					  $1700
+				 </span>
+				</a>
 
-			<a class="card" href="#" target="_blank" >
-			  <span class="hint_text">捏陶多肉組盆<br>Pottery&Succulents
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  近期開課 ｜ 2020/12/15
-				  <br>
-				  $1200
-			 </span>
-			</a>		
-		</div>
+				<div class="txt1">
+				<p class="s1">[ 造型設計 ] 多肉糖霜餅乾</p>
+					<p class="s2">好玩又美味的糖霜餅乾設計，餅乾當作畫布，糖霜是你的顏料，即使不會畫畫的朋友，都能輕鬆做出擬真多肉餅乾，盡情地在餅乾上創作吧！
+					</p>
+					<br>
+					<br>
+					<a class="s3" href="#"> more ›</a>
+				</div>		
 
-			<div class="txt">
-				<div class="txt1">哈哈</div>
-				<div class="txt1">哈哈</div>
-				<div class="txt1">哈哈</div>
+			</div>
+			
 
-					
+
+			
+            <div class="allin">
+				<a class="card bg4" href="#">
+				  <span class="hint_text">多肉繁殖實作課<br>Succulents Propagating
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  <br>
+					  開課日期 ｜ 2020/11/15
+					  <br>
+					  $1600
+				 </span>
+				</a>
+
+				<div class="txt1">
+				<p class="s1">[ 手作課程 ] 多肉繁殖實作課</p>
+					<p class="s2">專為Succuholic肉友們量身打造，以繁殖為主要授課方向，讓每位愛多肉的人，可以將身邊的多肉植物越種越多，成為名副其實的多肉爸媽。
+					</p>
+					<br>
+					<br>
+					<a class="s3" href="#"> more ›</a>
+				</div>		
+
 			</div>
 
-  		</div>
+		</div>
+	</div>
+
+
+		
+
+				
+
+						
+		
+
+
+
+
 
 
 
@@ -120,64 +252,153 @@
 
 
   		<div class="course_man">
-  			<p>企業手作課程<br><span>Personal workshop</span></p>
+  			<p id="corppp">企業手作課程<br><span>Personal workshop</span></p>
   			<span class="man_info">將植栽與設計融入 Team Building 中，讓多肉工坊替你規劃員工活動吧！</span>
 
 
-  		<div class="piccontainer">
+	  		<div class="piccontainer">
 
-			<a class="card" href="#" target="_blank" >
-			  <span class="hint_text">捏陶多肉組盆<br>Pottery&Succulents
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  近期開課 ｜ 2020/12/15
-				  <br>
-				  $1200
-			 </span>
-			</a>
+				<div class="allin">
+					<a class="card bg5" href="#">
+					  <span class="hint_text">親子考古植栽<br>Parent-Child Planting
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  開課日期 ｜ 2020/10/23
+						  <br>
+						  $1900
+					 </span>
+					</a>
 
-			<a class="card bg2" href="#" target="_blank" >
-			  <span class="hint_text">捏陶多肉組盆<br>Pottery&Succulents
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  近期開課 ｜ 2020/12/15
-				  <br>
-				  $1200
-			 </span>
-			</a>
+					<div class="txt1">
+					<p class="s1">[ 多肉植栽 ] 親子考古植栽</p>
+						<p class="s2">經典的多肉植栽課一直都是大人的最愛，那如果再加上小孩喜歡的「挖寶」遊戲呢？一次擁有兩種趣味體驗，適合員工攜家帶眷的手作課！
+						</p>
+						<br>
+						<br>
+						<a class="s3" href="#"> more ›</a>
+					</div>		
 
-			<a class="card" href="#" target="_blank" >
-			  <span class="hint_text">捏陶多肉組盆<br>Pottery&Succulents
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  <br>
-				  近期開課 ｜ 2020/12/15
-				  <br>
-				  $1200
-			 </span>
-			</a>		
+
+			    </div>
+
+				
+			    <div class="allin">
+					<a class="card bg6" href="#">
+					  <span class="hint_text">幾何水泥盆栽製作<br>Potting Succulents
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  開課日期 ｜ 2020/11/16
+						  <br>
+						  $1800
+					 </span>
+					</a>	
+
+					<div class="txt1">
+					<p class="s1">[ 水泥課程 ] 幾何水泥盆栽製作</p>
+						<p class="s2">親手製作一個水泥盆栽，是多肉植物愛好者都嚮往的事，所以這一堂水泥課程是獻給大家的！
+	                    水泥盆製作可塑性高，是DIY盆器的入門好選擇。
+						</p>
+						<br>
+						<br>
+						<a class="s3" href="#"> more ›</a>
+					</div>		
+				</div>	
+				
+  		
+
+
+				<div class="allin">
+					<a class="card bg7" href="#">
+					  <span class="hint_text">肉肉植物花園<br>Embroidery&<br>Succulents
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  開課日期 ｜ 2020/12/10
+						  <br>
+						  $1600
+					 </span>
+					</a>
+
+					<div class="txt1">
+					<p class="s1">[ 刺繡課程 ] 肉肉植物花園</p>
+						<p class="s2">一針一線，
+						線如顏料、針似畫筆，品味一針一線間的韻味，在織物上繡出一座美麗的多肉花園。
+						</p>
+						<br>
+						<br>
+						<a class="s3" href="#"> more ›</a>
+					</div>		
+				</div>
+
+				
+				<div class="allin">
+					<a class="card bg8" href="#">
+					  <span class="hint_text">微景多肉秘境<br>Mini Succulent Scene
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  <br>
+						  開課日期 ｜ 2020/12/25
+						  <br>
+						  $1800
+					 </span>
+					</a>	
+
+					<div class="txt1">
+					<p class="s1">[ 多肉花藝 ] 微景多肉秘境</p>
+						<p class="s2">當我們將一切都縮小，迷你的多肉、迷你的造景裝飾，
+						一只玻璃花器就能滿足你的想望，構建一畝多肉園地！
+						</p>
+						<br>
+						<br>
+						<a class="s3" href="#"> more ›</a>
+					</div>				
+				</div>
+
+			</div>
 		</div>
-  		</div>
-
-
-
 
   	</div>
+  </div>
 
 
+
+
+
+
+
+
+	<footer>
+     <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    	<p class="f4">Copyright © 2020 Succulents. All Rights Reserved.</p>
+    </footer>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./vendors/dist/hamburger.js"></script>
+    <script src="./vendors/dist/cart.js"></script>
+	
 </body>
 </html>

@@ -1,0 +1,413 @@
+@import "./common/reset.css";
+@import "./common/footer.css";
+@import "./common/header.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+*{
+  box-sizing:border-box;
+  list-style:none;
+}
+
+
+body{
+  margin:0;
+  font-size:0;
+  font-family: 'Noto Sans TC', sans-serif;
+  color:#494949;
+}
+
+nav.right > ul > li:nth-child(1) a{
+  background-color:#ffba39;
+  color:white;
+}
+
+header nav.nav ul.link_list > li:nth-child(1) a{
+  color:#ffba39;
+}
+
+button.cart{
+  border:none;
+  outline:none;
+  background-color:transparent;
+}
+
+div.parent_container{
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+div.breadcrumb{
+  margin-top:30px;
+  padding: 5px 10px;
+  font-size:14px;
+  text-align:left;
+}
+
+div.breadcrumb ol.breadcrumb_list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.breadcrumb ol.breadcrumb_list > li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+
+
+div.breadcrumb ol.breadcrumb_list > li::before{
+  content: "/";
+  font-size: 18px;
+  color: #c0c0be;
+  margin-right: 12px;
+}
+
+div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+  content: "";
+  margin-right: 0;
+}
+
+
+
+div.breadcrumb ol.breadcrumb_list > li > a{
+  text-decoration: none;
+  display: inline-block;
+  color: #c0c0be;
+}
+
+div.breadcrumb ol.breadcrumb_list > li > a:hover{
+  color: black;
+}
+
+div.breadcrumb ol.breadcrumb_list > li > a.now{
+  color:black;
+}
+
+
+/*    */
+
+
+
+div.all{
+  display:inline-block;
+  margin:0 auto;
+  margin-top:30px;
+  /*border:1px solid red;*/
+}
+
+
+div#img-switch{
+/*  border:1px solid black;*/
+  display:inline-block;
+}
+
+div.big_img{
+  overflow:hidden;
+}
+
+div.big_img img{
+  /*width:400px;*/
+  width:34vw;
+}
+
+div.small_img{
+  margin-top:20px;
+  display:flex;
+  justify-content:space-between;
+}
+
+div.small_img a{
+  display:inline-block;
+  /*margin:0 10px;*/
+}
+
+div.small_img a img{
+  width:9vw;
+  /*height:106px;*/
+}
+
+
+
+div.aside{
+  display:inline-block;
+  vertical-align:top;
+  /*margin-left:80px;*/
+  /*width:500px;*/
+  font-size:16px;
+  text-align:left;
+  padding:0 35px;
+  width:45vw;
+}
+
+div.aside p.hottitle{
+  font-size:25px;
+  text-align:left;
+  margin:20px 0;
+}
+
+div.aside p.prize{
+  color:gray;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+p.p3{
+  line-height:40px;
+  margin-bottom:20px;
+}
+
+div.number{
+  font-size:17px;
+  margin-bottom:30px;
+}
+
+div.number input{
+  height: 33px;
+    width: 56px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(251,251,174,0.74);
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 17px;
+    margin-right: 35px;
+    margin-left: 5px;
+    outline: none;
+    font-family: "Noto Sans TC Light";
+    padding: 10px 0;
+}
+
+
+
+
+
+a.buynow{
+  color:rgb(222, 165, 74);
+  /*padding:10px;*/
+  padding:9px;
+  display:inline-block;
+  margin-right:30px;
+  border:1.5px solid rgb(222, 165, 74);
+  width:40%;
+  text-align:center;
+}
+
+a.buynow:hover{
+  color:white;
+  background-color:rgb(222, 165, 74);
+}
+
+/*a.later{
+  color:gray;
+  padding:10px;
+  display:inline-block;
+  border:1.5px solid gray;
+  width:41%;
+  text-align:center;
+}
+
+
+a.later:hover{
+  color:white;
+  background-color:gray;
+}*/
+
+button.ucc{
+  color:gray;
+  padding:10px;
+  display:inline-block;
+  border:1.5px solid gray;
+  width:41%;
+  text-align:center;
+  font-size:16px;
+}
+
+button.ucc:hover{
+  color:white;
+  background-color:gray;
+  cursor: pointer;
+}
+
+
+
+
+div.tab_container{
+  margin-top:50px;
+  font-size:16px;
+  text-align:left;
+  margin:0 auto;
+ /* border:1px solid green;*/
+  width:80vw;
+}
+
+
+div.tab_container div.tab_list_block ul.tab_list{
+  list-style: none;
+  display: inline-block;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li{
+  display: inline-block;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 20px;
+  cursor: pointer;
+  color:#494949;
+  font-size:17px;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li:first-child{
+  border-right:1px solid #494949;
+}
+
+
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+  color: rgb(204, 147, 55);
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li > a:hover{
+  color: rgb(204, 147, 55);
+}
+
+
+
+div.tab_container div.tab_contents{
+  margin-top:20px;
+}
+
+div.tab_container div.tab_contents div.tab{
+  padding: 0 15px;
+  display: none;
+}
+
+div.tab_container div.tab_contents div.tab.-on{
+  display: block;
+}
+
+
+div.all{
+  margin-bottom:40px;
+} 
+
+
+
+/* */
+
+div.hotgoods_other{
+  font-size:16px;
+ /* border:1px solid red;*/
+  display:inline-block;
+  margin:10px auto 0;
+}
+
+div.allitem {
+  display:inline-block;
+  vertical-align:middle;
+  border-radius:5px;
+  overflow:hidden;
+  box-shadow: -3px 3px 10px #eee;
+  text-align:center;
+  font-size:16px;
+  width:220px;
+  margin-bottom:30px;
+}
+
+.tt1{
+  margin:0 30px 30px;
+}
+
+.tt2{
+  margin-right:30px;
+}
+
+div.iteminfo{
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align:left;
+  padding-left:10px;
+  position: relative;
+}
+
+
+div.white_cart{
+  font-size:16px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+
+
+
+
+
+div.hotgoods_other > div.allitem > div.iteminfo > p.prize{
+  font-size:12px;
+}
+
+
+
+div.hotgoods_other > div.allitem > a > img{
+  width:220px;
+  height:220px;
+  vertical-align:middle;
+}
+
+div.allitem > a {
+  display:block;  
+  overflow:hidden;
+}
+
+
+img.item3 , img.item4 , img.item5 , img.item13{
+  transition:transform .2s; 
+}
+
+
+div.allitem > a:hover > img{
+  transform:scale(1.1,1.1);
+}
+
+
+div.iteminfo a:hover{
+  color:rgb(222, 165, 74);
+}
+
+
+
+p.txt{
+  text-align:left;
+  font-size:20px;
+  width:82%;
+  margin:39px auto 0;
+}
+
+/*button.cart{
+  border:none;
+  outline:none;
+  background-color:transparent;
+}寫到前面去*/
+
+.fa-cart-plus{
+  font-size:37px;
+  color:#ffba39;
+  margin:0 auto;
+  transition:transform .3s ease-in-out;
+}
+
+
+.fa-cart-plus:hover{
+  color:#d08700;
+  cursor: pointer;
+  transform:scale(1.1,1.1);
+  transition:all .3s ease-in-out;
+}

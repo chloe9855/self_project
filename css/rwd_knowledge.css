@@ -1,0 +1,49 @@
+@media screen and (max-width: 767px){
+
+	div.banner > p.banner_title{
+		font-size:30px;
+	}
+	
+}
+
+@media screen and (max-width: 690px) and (min-width: 664px){
+  div.all{
+    overflow:hidden;
+  }
+}
+
+@media screen and (max-width: 630px){
+  div.card{
+    margin:0 auto 28px;
+  }
+}
+
+@media screen and (max-width: 359px){
+  div.all{
+    overflow:hidden;
+  }
+}
+
+@media screen  and (min-width:935px){
+	button.hamburger{
+    display: none ;
+	}
+    nav.right{
+  	display:none !important;
+  	}
+
+}
+
+@media screen  and (max-width:934px){
+	
+
+	nav.nav{
+    display: none !important;
+  }
+
+
+  button.hamburger{
+    display: inline-block !important;
+  }
+
+}

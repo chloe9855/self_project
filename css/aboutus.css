@@ -1,0 +1,183 @@
+@import "./common/reset.css";
+@import "./common/footer.css";
+@import "./common/header.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+
+*{
+  box-sizing:border-box;
+  list-style:none;
+}
+
+
+img{
+  max-width:100%;
+}
+
+
+html , body{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-size:0;
+  font-family: 'Noto Sans TC', sans-serif;
+  color:#494949;
+  
+}
+
+nav.right > ul > li:nth-child(5) a{
+  background-color:#ffba39;
+  color:white;
+}
+
+header nav.nav ul.link_list > li:nth-child(5) a{
+  color:#ffba39;
+}
+
+
+
+div.banner{
+  min-width: 100%;
+  height: 35vw;
+  background-image: url("../img/about.jpg");
+  background-size: cover;
+  background-position:center  center;
+  text-align:center;
+}
+
+div.banner > p.banner_title{
+  color:black;
+  font-size:45px;
+  font-family: 'Noto Serif TC', serif;
+  display:inline-block;
+  margin:0 auto;
+  margin-top:12%;
+}
+
+
+div.parent_container{
+  max-width:1200px;
+  margin:50px auto 60px;
+  font-size:16px;
+  text-align:center;
+}
+
+
+
+
+p.p1{
+  margin:0 auto;
+  font-size:25px;
+  font-style:italic;
+  margin-bottom:34px;
+  color:green;
+  text-align:center;
+  padding:0 15px;
+  width:91%;
+}
+
+p.p2{
+  font-size:17px;
+  margin:0 auto;
+  margin-bottom:77px;
+  max-width:750px;
+  line-height:30px;
+}
+
+p.p3{
+  font-size:22px;
+  margin:0 auto;
+  margin-bottom:37px;
+}
+
+
+
+img.c1{
+  width:800px;
+  margin:5px 0;
+}
+
+img.t1{
+  max-width:270px;
+}
+
+
+div.staff{
+  display:inline-block;
+  margin:0 auto;
+}
+
+div.s1{
+  width:300px;
+  display:inline-block;
+  margin:0 30px;
+  margin-bottom:60px;
+}
+
+
+p.name{
+  font-size:25px;
+}
+
+
+p.n2{
+  font-size:18px;
+  margin:15px 0;
+}
+
+
+p.n3{
+  width:150px;
+  margin:0 auto;
+  text-align:left;
+}
+
+.quote{
+  color:#8080806e;
+  font-size:30px;
+  font-weight:bold;
+}
+
+p.p4{
+  font-size:22px;
+  margin-top:40px;
+  margin-bottom:37px;
+}
+
+.inff{
+  text-align:left;
+  max-width:610px;
+  margin:0 auto;
+  font-size:17px;
+  margin-bottom:20px;
+  padding:0 20px;
+  line-height:40px;
+}
+
+.fa-phone{
+  color:#ff9c56;
+}
+
+.fa-envelope{
+  color:#8ae0a9;
+}
+
+.fa-calendar-alt{
+  color:#9fd9e6;
+}
+
+.fa-map-marker-alt{
+  color:#ff9c56;
+}
+
+.map{
+  padding:0 20px;
+}
+
+iframe{
+  max-width: 100%;
+}

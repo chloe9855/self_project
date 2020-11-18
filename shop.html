@@ -2,58 +2,130 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>多肉工坊</title>
 	<link rel="stylesheet" href="./css/shop.css">
+	<link rel="stylesheet" href="./vendors/dist/hamburger.css">
+	<link rel="stylesheet" href="./css/rwd_shop.css">
+	<link rel="stylesheet" href="./awesome/css/all.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
 	<header>
+		<div class="car">
+			<button class="closebtn">╳</button>
+			<div class="ctitle">您的購物車</div>
+			<!-- <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div> -->
+            
+	        <div class="cart-items">
+	        </div>
+        	
+
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            
+            <button class="btn btn-primary btn-purchase" type="button">前往結帳</button>
+		</div>
+
 	  <div class="bar">
-		  <a href="./index.html" class="logo_img"><img src="./img/logo3.png"></a>
+		<a href="./index.html" class="logo_img"><img src="./img/logo3.png"></a>
+
+		<button class="hamburger hamburger--spring" type="button">
+	        <span class="hamburger-box">
+	         	<span class="hamburger-inner"></span>
+	        </span>
+	    </button>
+
+	    
 	      <nav class="nav">
 	        <ul class="link_list">
 	          <li>
-	            <a href="shop.html" class="shop" target="_blank">線上商店</a>
+	            <a href="shop.html" class="plu">線上商店</a>
 	          </li>
 	          <li>
-	            <a href="workshop.html" target="_blank">手作課程</a>
+	            <a href="workshop.html" class="plu">手作課程</a>
 	          </li>
 	          <li>
-	            <a href="spacedeco.html" target="_blank">空間造景</a>
+	            <a href="spacedeco.html" class="plu">空間造景</a>
 	          </li>
 	          <li>
-	            <a href="knowledge.html" target="_blank">多肉知識</a>
+	            <a href="knowledge.html" class="plu">多肉專欄</a>
 	          </li>
 	          <li>
-	            <a href="aboutus.html" target="_blank">關於我們</a>
-	          </li>
-	          <li>
-	             <a href="#" class="cart"><img src="./img/cart.png"></a>
+	            <a href="aboutus.html" class="plu">關於我們</a>
 	          </li>
 	        </ul>
 	      </nav>
+
+	      <div class="allbt">
+		      <button class="hc itsu"><i class="fas fa-shopping-cart"></i></button>
+		      <button class="hc"><i class="fas fa-user"></i></button>
+	  	  </div>
 	   
 	  </div>
+
+	  <nav class="right">
+         <ul class="list">
+          <li>
+            <a href="shop.html" class="">線上商店</a>
+          </li>
+          <li>
+            <a href="workshop.html" class="">手作課程</a>
+          </li>
+          <li>
+            <a href="spacedeco.html" class="">空間造景</a>
+          </li>
+          <li>
+            <a href="knowledge.html" class="">多肉專欄</a>
+          </li>
+          <li>
+            <a href="aboutus.html" class="">關於我們</a>
+          </li>
+        </ul>
+      </nav>
+
+
   	</header>
 
   	<div class="banner"><p class="banner_title">線上商店</p></div>
 
 
   	<div class="parent_container">
+
+
+  		<div class="filter">
+  			<button type="button" class="btn_filter">
+  				<img class="fill" src="./img/fill.png">
+  			</button>
+  		</div>
+
+
+
   		<aside>
+        <form>
   			<div class="search_bar">
   				<input type="text" class="search" placeholder="請輸入關鍵字">
+  				<i class="fas fa-search"></i>
   			</div>
 
+  			<button type="button" class="btn_filter2">╳</button>
+
   			<div class="option_list">
-  				<p>商品分類</p>
+  				<p>主題植物</p>
 			    <div class="option">
 
 			    	<label>
 					  <input type="checkbox" name="item_option" >
 					  仙人掌盆栽
 					</label>
+
 			    </div>
 			    <div class="option">
 			    	
@@ -85,6 +157,54 @@
 			    </div>
 
 			</div>
+
+      <div class="option_list">
+          <p>設計盆器</p>
+          <div class="option">
+
+            <label>
+            <input type="checkbox" name="item_option" >
+            大理石盆器
+          </label>
+
+          </div>
+          <div class="option">
+            
+            <label>
+            <input type="checkbox" name="item_option" >
+             陶瓷盆器
+          </label>
+          </div>
+          <div class="option">
+            
+            <label>
+            <input type="checkbox" name="item_option" >
+            木質盆器
+          </label>
+          </div>
+          <div class="option">
+            
+            <label>
+            <input type="checkbox" name="item_option" >
+            玻璃盆器
+          </label>
+          </div>
+          <div class="option">
+            
+            <label>
+            <input type="checkbox" name="item_option" >
+            石質盆器
+          </label>
+          </div>
+          <div class="option">
+            
+            <label>
+            <input type="checkbox" name="item_option" >
+            水泥盆器
+          </label>
+          </div>
+
+      </div>
 
 			<div class="option_list">
   				<p>價格區間</p>
@@ -121,110 +241,176 @@
 
 			<input type="submit" value="以上條件搜尋">
 
-
+      </form>
   		</aside>
 
-  		<main>
-  			<select class="sort" name="itemsort">
-			  <option value="1" selected>依熱銷度排序</option>
-			  <option value="2">依最新項目排序</option>
-			  <option value="3">依價格排序 : 低至高</option>
-			  <option value="3">依價格排序 : 高至低</option>
-			</select>
 
-			<div class="number">
-				<p class="n1">1-12</p>
-				<p class="n2"> of 155</p>
+
+
+  		<main>
+
+  			<div class="selectall">
+	  			<select class="sort" name="itemsort">
+				  <option value="1" selected>依最新項目排序</option>
+				  <option value="2">依熱銷度排序</option>
+				  <option value="3">依價格排序 : 低至高</option>
+				  <option value="3">依價格排序 : 高至低</option>
+				</select>
+
+				<div class="number">
+					<p class="n1">1-12</p>
+					<p class="n2"> of 155</p>
+				</div>
 			</div>
 
-			<div class="hotgoods_other">
-				<div class="allitem">
-                <a href="#"><img class="item3" src="./img/item3.jpg"></a>
+
+
+		<div class="wrapper">
+
+
+
+			
+			  <div class="allitem">
+                <a href="buy.html"><img class="item3" src="./img/caac.jpg"></a>
                 <div class="iteminfo">
-                    <a href="#" class=hottitle>金鑽仙人掌盆栽</a>
-                    <p class="prize">NT.1100</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <a href="buy.html" class=hottitle>招財貓多肉盆栽</a>
+                    <p class="prize">$2200</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
 
               </div>
               
               <div class="allitem">
-                <a href="#"><img class="item4" src="./img/item4.jpg"></a>
+                <a href="#"><img class="item3" src="./img/item4.jpg"></a>
                 <div class="iteminfo">
                     <a href="#" class=hottitle>銀后虎尾蘭盆栽</a>
-                    <p class="prize">NT.1000</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <p class="prize">$1000</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
               </div>
 
               <div class="allitem">
-                <a href="#"><img class="item5" src="./img/item5.jpg"></a>
+                <a href="#"><img class="item3" src="./img/item5.jpg"></a>
                 <div class="iteminfo">
                     <a href="#" class=hottitle>綜合多肉盆栽</a>
-                    <p class="prize">NT.1000</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <p class="prize">$1000</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
               </div>
-             </div>
+             
 
 
-             <div class="hotgoods_other">
-				<div class="allitem">
-                <a href="#"><img class="item3" src="./img/item3.jpg"></a>
+            
+			  <div class="allitem">
+                <a href="#"><img class="item3" src="./img/item6.jpg"></a>
                 <div class="iteminfo">
-                    <a href="#" class=hottitle>金鑽仙人掌盆栽</a>
-                    <p class="prize">NT.1100</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <a href="#" class=hottitle>繽紛多肉花束</a>
+                    <p class="prize">$1600</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
               </div>
               
               <div class="allitem">
-                <a href="#"><img class="item4" src="./img/item4.jpg"></a>
+                <a href="#"><img class="item3" src="./img/item13.jpg"></a>
                 <div class="iteminfo">
-                    <a href="#" class=hottitle>銀后虎尾蘭盆栽</a>
-                    <p class="prize">NT.1000</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <a href="#" class=hottitle>盛夏多肉桌花</a>
+                    <p class="prize">$1000</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
               </div>
 
               <div class="allitem">
-                <a href="#"><img class="item5" src="./img/item5.jpg"></a>
-                <div class="iteminfo">
-                    <a href="#" class=hottitle>綜合多肉盆栽</a>
-                    <p class="prize">NT.1000</p>
-                    <div class="white_cart"><a href="#"></a></div>
-                </div>
-              </div>
-             </div>
-
-             <div class="hotgoods_other">
-				<div class="allitem">
-                <a href="#"><img class="item3" src="./img/item3.jpg"></a>
+                <a href="#"><img class="item3" src="./img/item100.jpg"></a>
                 <div class="iteminfo">
                     <a href="#" class=hottitle>金鑽仙人掌盆栽</a>
-                    <p class="prize">NT.1100</p>
-                    <div class="white_cart"><a href="#"></a></div>                    
+                    <p class="prize">$1500</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+              </div>
+            
+
+				      <div class="allitem">
+                <a href="#"><img class="item3" src="./img/mix.jpg"></a>
+                <div class="iteminfo">
+                    <a href="#" class=hottitle>虎尾蘭合植盆栽</a>
+                    <p class="prize">$1500</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>                    
                 </div>
               </div>
               
               <div class="allitem">
-                <a href="#"><img class="item4" src="./img/item4.jpg"></a>
+                <a href="#"><img class="item3" src="./img/ele.jpg"></a>
                 <div class="iteminfo">
-                    <a href="#" class=hottitle>銀后虎尾蘭盆栽</a>
-                    <p class="prize">NT.1000</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <a href="#" class=hottitle>花現大象盆栽</a>
+                    <p class="prize">$1600</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
               </div>
 
               <div class="allitem">
-                <a href="#"><img class="item5" src="./img/item5.jpg"></a>
+                <a href="#"><img id="item3" class="item3" src="./img/bear.jpg"></a>
                 <div class="iteminfo">
-                    <a href="#" class=hottitle>綜合多肉盆栽</a>
-                    <p class="prize">NT.1000</p>
-                    <div class="white_cart"><a href="#"></a></div>
+                    <a href="#" class=hottitle>木熊多肉盆栽</a>
+                    <p class="prize">$1800</p>
+                    <div class="white_cart">
+                    	<button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
                 </div>
               </div>
-             </div>
+
+              <div class="allitem">
+                <a href="#"><img class="item3" src="./img/pea.jpg"></a>
+                <div class="iteminfo">
+                    <a href="#" class=hottitle>團扇仙人掌盆栽</a>
+                    <p class="prize">$1500</p>
+                    <div class="white_cart">
+                      <button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>                    
+                </div>
+              </div>
+              
+              <div class="allitem">
+                <a href="#"><img class="item3" src="./img/flower.jpg"></a>
+                <div class="iteminfo">
+                    <a href="#" class=hottitle>木棉多肉花束</a>
+                    <p class="prize">$1600</p>
+                    <div class="white_cart">
+                      <button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="allitem">
+                <a href="#"><img id="item3" class="item3" src="./img/piece.jpg"></a>
+                <div class="iteminfo">
+                    <a href="#" class=hottitle>寶扇虎尾蘭盆栽</a>
+                    <p class="prize">$1800</p>
+                    <div class="white_cart">
+                      <button class="cart"><i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+              </div>
+            
+
+
+
+        </div>
 
 
              <div class="pagination_block">
@@ -255,20 +441,34 @@
 
 
 
-	<footer>
-      <div class="footer_info">
-        <p class="f1">Location</p>
-        <p class="f2">地址：桃園市中壢區復興路46號</p>
-        <p class="f3">營業時間：週一至週日 AM.10:00- PM.18:00 </p>
-        <p class="f4">Copyright © 2020 Succulents. All Rights Reserved.</p>
-     </div>
+	 <footer>
      <div class="social">
-      <a href="#"><img class="fb" src="./img/fb.png"></a>
-      <a href="#"><img class="twitter" src="./img/twitter.png"></a>
-      <a href="#"><img class="ig" src="./img/ig.png"></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
-    	
+      <p class="f4">Copyright © 2020 Succulents. All Rights Reserved.</p>
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./vendors/dist/hamburger.js"></script>
+    <script src="./vendors/dist/cart.js"></script>
+
+    <script>
+		
+		$(function(){
+  
+		  // 點擊按鈕，選單縮放
+		  $("button.btn_filter , button.btn_filter2").on("click", function(){
+		    $("aside").slideToggle();
+		  });
+
+		  
+		  
+		});
+
+	</script>
 
 </body>
 </html>

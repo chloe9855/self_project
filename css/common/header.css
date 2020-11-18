@@ -5,15 +5,17 @@ header{
   margin:0 auto;
   position:sticky;
   top:0;
-  min-width:1200px;
+  /*min-width:1200px;*/
   z-index:10000;
+  min-width:100%;
 }
 
 
 header div.bar{
   /*border:1px solid black;*/
   padding:10px;
-  background-color: rgb(255, 255, 255,.55);
+  background-color: rgb(255, 255, 255,.6);
+  width:100%;
 }
 
 header div.bar::after{
@@ -28,7 +30,6 @@ a.logo_img img{
   width:170px;
   vertical-align:middle;
   margin-left:25px;
-  /*border:1px solid red;*/
 }
 
 header nav.nav ul.link_list{
@@ -38,32 +39,327 @@ header nav.nav ul.link_list{
 }
 
 header nav.nav{
-  display: inline-block;
+  /*display: inline-block;*/
   vertical-align: middle;
-  float:right;
- /* border:1px solid green;*/
+  /*float:right;*/
+  display:inline-flex;
+  justify-content:flex-end;
+  text-align:right;
+  width:65vw;
+  /*margin-left:30%;*/
 }
 
 header nav.nav ul.link_list > li{
   display:inline-block;
+  padding:10px 10px 10px;
+  text-align: center;
+  font-size:18px;
+  /*min-width:100px;*/
+  margin:0 .673vw;
+  
 }
 
 
-header nav.nav ul.link_list > li > a{
-  font-family: "mySemiBold";
-  font-size:15px;
+header nav.nav ul.link_list > li > a.plu{
+  font-family: "Noto Serif CJK TC SemiBold";
   display:inline-block;
   text-decoration: none;
-  padding: 14px 10px;
-  min-width: 100px;
+  padding:0;
+  min-width: 80px;
   text-align: center;
   color: #3C3C3C;
+  /*border:1px solid red;*/
+}
+
+
+/*a.cart{
+  display:inline-block;
+  margin-left:30px;
 }
 
 a.cart img{
-  margin-left:20px;
   width:20px;
   vertical-align:middle;
+}*/
+
+
+header nav.nav ul.link_list > li > a.plu:hover{
+  color:#ffba39;
+  transition:all .1s ease-in-out;
 }
 
 
+
+button.hc{
+  position:relative;
+  top:13px;
+  border:none;
+  outline:none;
+  background-color:transparent;
+}
+
+button.hc .fas{
+  font-size:21px;
+  color:#494949;
+  padding:2px;
+}
+
+button.hc .fas:hover{
+  color:#ffba39;
+  cursor: pointer;
+  transition:all .3s ease-in-out;
+}
+
+div.allbt{
+  vertical-align:middle;
+  display:inline-block;
+  align-items:center;
+  float:right;
+  margin-right:2.1%;
+}
+
+
+/*   rwd選單   */
+
+.hamburger{
+  float:right;
+}
+
+nav.right{
+  font-size:16.7px;
+  z-index:80;
+  position:relative;
+  /*border:1px solid black;*/
+  text-align:center;
+  display:none;
+  height:100vh;
+  width:100%;
+  background-color:white;
+  /*padding:10px;*/
+}
+
+nav.right > ul > li {
+  /*padding:20px;*/
+}
+
+nav.right > ul > li a:hover{
+  background-color:#ffba39;
+  color:white;
+  transition:all .3s ease-in-out;
+
+}
+
+nav.right > ul > li a{
+  display:block;
+  padding:20px;
+  font-size:17px;
+}
+
+
+/*  側邊購物車  */
+
+div.car{
+  position:fixed;
+  top: 0;
+  left:0;
+  height:100%;
+  width: 280px;
+  background-color: white;
+  padding:10px;
+  transition: all 1s;
+  z-index:20000;
+  transform: translateX(-110%);
+  font-size:16px;
+  box-shadow: 5px 0px 5px #b2afa8;
+  text-align:center;
+}
+
+div.car.-on{
+  transform: translateX(0%);
+}
+
+button.closebtn{
+  border:none;
+  outline:none;
+  background-color:transparent;
+  font-size:18px;
+  position:absolute;
+  right:0;
+  top:0;
+  color:#949393;
+  padding-right:5px;
+}
+
+button.closebtn:hover{
+  cursor: pointer;
+}
+
+div.ctitle{
+  text-align:center;
+  font-size:20px;
+  margin-bottom:7px;
+}
+
+.cart-quantity-input {
+    height: 20px;
+    width: 36px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(251,251,174,0.74);
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 35px;
+    margin-left:5px;
+    outline:none;
+    font-family:"Noto Sans TC Light";
+    padding:10px 0;
+}
+
+.cart-item{
+  /*border:1px solid red;*/
+  display:flex;
+  margin:0 auto 15px;
+}
+
+div.loop{
+  padding-left:6px;
+  text-align:left;
+}
+
+div.cart-quantity{
+  padding-top:16px;
+}
+
+button.btn-danger{
+  border:none;
+  outline:none;
+  background-color:transparent;
+  font-size:21px;
+  font-weight:bold;
+}
+
+button.btn-danger:hover{
+  cursor: pointer;
+}
+
+
+
+div.cart-total{
+  font-size:20px;
+  text-align:center;
+  position:fixed;
+  bottom:13%;
+  left:88px;
+}
+
+button.btn-purchase{
+  color:white;
+  font-size:20px;
+  position:fixed;
+  bottom:5%;
+  left:28%;
+  background-color:#ffba39;
+  border:none;
+  outline:none;
+  border-radius:20px;
+  padding: 6px 20px;
+}
+
+/*div.auu{
+  overflow-y: auto;
+  height:500px;
+}*/
+
+.cart-items{
+  padding-top:15px;
+  overflow-y: auto;
+  height:405px;
+}
+
+ .cart-items::-webkit-scrollbar{
+    width:6px;
+    background-color:transparent;
+
+  }
+
+ .cart-items::-webkit-scrollbar-thumb{
+    background-color:rgb(216,215,214,.5);
+    border-radius:20px;
+    margin-left:20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+nav.nav{
+  display: block ;
+}
+
+/*button.hamburger{
+  display: none !important;
+}
+
+nav.right{
+  display:none !important;
+}*/
+
+}
+
+@media screen and (max-width: 767px){
+  /*nav.nav{
+    display: none !important;
+  }
+
+  button.hamburger{
+    display: inline-block;
+  }*/
+
+  a.logo_img img{
+    width:145px;
+  }
+
+  button.hc{
+    top:7px;
+  }
+  
+}
+
+
+@media screen and (max-width: 575px){
+  a.logo_img img{
+    margin-left:0;
+  }
+
+}
+
+@media screen and (max-width: 320px){
+  a.logo_img img{
+    width:129px;
+  }
+
+  .hamburger-box{
+    top:0px;
+  }
+
+  button.hc{
+    top:6px;
+  }
+
+}
+
+
+ 

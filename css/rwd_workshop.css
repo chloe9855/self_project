@@ -1,0 +1,182 @@
+@media screen  and (min-width:935px){
+	button.hamburger{
+    display: none ;
+	}
+    nav.right{
+  	display:none !important;
+  	}
+
+}
+
+
+
+@media screen  and (max-width:934px){
+	
+
+	nav.nav{
+    display: none !important;
+  }
+
+
+  button.hamburger{
+    display: inline-block !important;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1141px){
+	a.card{
+		width:43vw;
+  		height:18vw;
+	}
+
+	div.txt1{
+		max-width:43vw;
+	}
+
+}
+
+
+@media screen and (min-width:1091px) and (max-width:1200px){
+	a span.hint_text{
+		font-size:20px;
+	}
+}
+
+@media screen and (min-width:769px) and (max-width:1091px){
+	a span.hint_text{
+		font-size:18px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	div.banner > p.banner_title{
+		font-size:30px;
+	}
+	
+	a.card{
+		width:88vw;
+  		height:33vw;
+	}
+
+	div.txt1{
+		max-width:90vw;
+	}
+
+	a:hover span.hint_text {
+  	transform:translateY(-78%);
+	}
+
+	/*div.allin{
+		padding:0;
+		margin:15px;
+	}*/
+}
+
+
+
+@media screen and (max-width: 575px){
+	a span.hint_text{
+		top:27%;
+		left:66px;
+		font-size: 19px;
+	}
+
+	a:hover span.hint_text {
+  	transform:translateY(-73%);
+	}
+}
+
+
+@media screen and (max-width: 498px){
+	a span.hint_text{
+		top:20%;
+		left:40px;
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 412px){
+	div.course_type > div.button_company > a{
+	font-size: 13px;
+    padding: 9px;
+	}
+
+	div.course_type > div.button_man > a{
+	font-size: 13px;
+    padding: 9px;
+}
+
+
+@media screen and (max-width: 400px){
+	a span.hint_text{
+		top:20%;
+		left:40px;
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	div.course_type > div.button_company > a{
+	font-size: 10px;
+    padding: 5px;
+	}
+
+	div.course_type > div.button_man > a{
+	font-size: 10px;
+    padding: 0;
+    
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (min-width:935px){
+	button.hamburger{
+    display: none ;
+	}
+    nav.right{
+  	display:none !important;
+  	}
+
+}
+
+
+
+@media screen  and (max-width:934px){
+	
+
+	nav.nav{
+    display: none !important;
+  }
+
+
+  button.hamburger{
+    display: inline-block !important;
+  }
+
+}

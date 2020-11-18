@@ -1,0 +1,91 @@
+@media screen  and (min-width:768px){
+
+	div.service > div.group{
+		width:16vw;
+	}
+
+	div.group img{
+		width:12vw;
+	}
+
+}
+
+@media screen  and (max-width:767px){
+	div.service > div.group{
+		padding:20px 0;
+	}
+
+	div.banner > p.banner_title{
+		font-size:30px;
+	}
+
+}
+
+@media screen  and (max-width:600px){
+	div.card{
+		margin:0 auto 25px;
+	}
+}
+
+@media screen  and (max-width:575px){
+	div.service > div.group{
+		width:35vw;
+	}
+
+	div.group img{
+		width:30vw;
+	}
+}
+
+@media screen  and (max-width:420px){
+	div.service > div.group{
+		width:32vw;
+	}
+
+	div.group img{
+		width:25vw;
+	}
+
+	
+}
+
+@media screen  and (max-width:320px){
+	div.service > div.group{
+		width:62vw;
+		margin-bottom:20px;
+	}
+
+	div.group img{
+		width:38vw;
+	}
+
+	
+}
+
+
+
+@media screen  and (min-width:935px){
+	button.hamburger{
+    display: none ;
+	}
+    nav.right{
+  	display:none !important;
+  	}
+
+}
+
+
+
+@media screen  and (max-width:934px){
+	
+
+	nav.nav{
+    display: none !important;
+  }
+
+
+  button.hamburger{
+    display: inline-block !important;
+  }
+
+}
